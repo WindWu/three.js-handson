@@ -1,0 +1,26 @@
+{
+  "name": "three.js.exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack && webpack-dev-server --inline=false",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wind.wu@outlook.com",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/lodash": "",
+    "copy-webpack-plugin": "",
+    "lodash": "",
+    "three": "",
+    "ts-loader": "",
+    "typescript": "",
+    "webpack": "",
+    "webpack-dev-server": ""
+  },
+  "dependencies": {
+    "@types/three": "",
+    "three": ""
+  }
+}
