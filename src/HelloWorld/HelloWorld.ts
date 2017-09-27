@@ -1,11 +1,22 @@
 import * as THREE from 'three'
-import * as _ from 'lodash';
+
+import Stats = require('../../libs/stats.js')
+
 export class HelloWorld {
   scene: THREE.Scene;
   renderer: THREE.WebGLRenderer;
   mesh: THREE.Mesh;
   camera: THREE.Camera;
+  stats: any;
+  constructor() {
+
+  }
   init() {
+
+    this.stats = Stats();
+    this.stats.showPanel( 0 ); // 0: fps, 1: ms, 2: mb, 3+: custom
+
+    document.body.appendChild( this.stats.dom );
     this.scene = new THREE.Scene();
 
     const aspect = window.innerWidth / window.innerHeight
@@ -32,6 +43,7 @@ export class HelloWorld {
     this.mesh.rotation.y += 0.02;
 
     this.renderer.render(this.scene, this.camera);
+    this.stats.update();
 
   }
 
