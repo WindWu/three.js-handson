@@ -21,10 +21,17 @@ module.exports = {
     libraryTarget: 'var',
     path: path.resolve(__dirname, 'dist')
   },
+  externals: {
+    three: 'THREE',
+    lodash: '_'
+  },
   plugins: [
     new CopyWebpackPlugin([{
       context: './src',
       from: '**/*.html'
+    },{
+      context: './third_parties',
+      from: '**/*.js'
     }])
   ],
   devServer: {

@@ -11,16 +11,11 @@
   "description": "",
   "devDependencies": {
     "@types/lodash": "",
+    "@types/three": "",
     "copy-webpack-plugin": "",
-    "lodash": "",
-    "three": "",
     "ts-loader": "",
     "typescript": "",
     "webpack": "",
     "webpack-dev-server": ""
-  },
-  "dependencies": {
-    "@types/three": "",
-    "three": ""
   }
 }
